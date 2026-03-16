@@ -1,0 +1,7 @@
+function clearRequestTypeOnDepartmentChange(executionContext) {
+    var formContext = executionContext.getFormContext();
+    var requestTypeField = formContext.getAttribute("rms_RequestType");
+    if (requestTypeField != null) {
+        requestTypeField.setValue(null);
+    }
+}
