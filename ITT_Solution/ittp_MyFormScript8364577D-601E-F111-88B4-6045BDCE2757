@@ -1,0 +1,8 @@
+var Sdk = window.Sdk || {};
+(function () {
+
+    this.formOnSave = function () {
+        // Display an alert dialog
+        Xrm.Navigation.openAlertDialog({ text: "Record saved." });
+      }
+}).call(Sdk);
